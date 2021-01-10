@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "Georgescu_Diana_ProiectContext"
+    }
+  }
+}

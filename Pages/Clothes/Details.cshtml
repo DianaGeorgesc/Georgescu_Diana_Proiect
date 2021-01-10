@@ -1,0 +1,37 @@
+﻿@page
+@model Georgescu_Diana_Proiect.Pages.Clothes.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Cloth</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cloth.ClothingItem)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cloth.ClothingItem)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cloth.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cloth.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Cloth.SaleDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Cloth.SaleDate)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Cloth.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
